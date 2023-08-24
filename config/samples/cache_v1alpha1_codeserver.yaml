@@ -1,0 +1,12 @@
+apiVersion: cache.example.com/v1alpha1
+kind: Codeserver
+metadata:
+  labels:
+    app.kubernetes.io/name: codeserver
+    app.kubernetes.io/instance: codeserver-sample
+    app.kubernetes.io/part-of: memcached-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: memcached-operator
+  name: codeserver-sample
+spec:
+  containerPort: 8081
